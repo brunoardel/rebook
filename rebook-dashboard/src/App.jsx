@@ -12,14 +12,7 @@ function App () {
             <Container-lg className="main-wrapper">
                 <NavBar />
                 <Nav />
-                <Body>
-                    <Container className="section left col-xs-3">
-                        <Sidebar />
-                    </Container>
-                    <Container className="section right col-xs-9">
-                        
-                    </Container>
-                </Body>
+                <Body />
             </Container-lg>
         </>
     );

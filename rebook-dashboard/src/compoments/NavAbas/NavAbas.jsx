@@ -1,41 +1,37 @@
 import React from "react";
-import { Nav, Tab } from "react-bootstrap";
+import { Tabs, Tab } from "react-bootstrap";
 
-export default function NavAbas () {
-    return (
-        <>
-            <Tab.Container id="abas" defaultActiveKey="link-1">
-                <Nav justify variant="tabs">
-                    <Nav.Item>
-                        <Nav.Link eventKey="link-1">Painel Gerencial</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="link-2">Análise Pipeline</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="link-3">Análise Esforço</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="link-4">Painel Indicadores</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-            </Tab.Container>
+class NavAbas extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+        this.state = {
+            key: 'painelGerencial',
+        };
+    }
 
-
-            <Tab.Content>
-                <Tab.Pane eventKey="link-1">
-                    <h4>link-1</h4>
-                </Tab.Pane>
-                <Tab.Pane eventKey="link-2">
-                    <h4>link-2</h4>
-                </Tab.Pane>
-                <Tab.Pane eventKey="link-3">
-                    <h4>link-3</h4>
-                </Tab.Pane>
-                <Tab.Pane eventKey="link-4">
-                    <h4>link-4</h4>
-                </Tab.Pane>
-            </Tab.Content>
-        </>
-    );
+    render () {
+        return (
+            <Tabs
+                justify
+                id="controlled-tab-example"
+                activeKey={this.state.key}
+                onSelect={key => this.setState({ key })}
+            >
+                <Tab eventKey="painelGerencial" title="Painel Gerencial">
+                    Painel Gerencial
+				</Tab>
+                <Tab eventKey="analisePipeline" title="Análise Pipeline">
+                    Análise Pipeline
+				</Tab>
+                <Tab eventKey="analiseEsforco" title="Análise Esforço">
+                    Análise Esforço
+				</Tab>
+                <Tab eventKey="painelIndicadores" title="Painel Indicadores">
+                    Painel Indicadores
+				</Tab>
+            </Tabs>
+        );
+    }
 }
+
+export default () => (<div><NavAbas /></div>)
