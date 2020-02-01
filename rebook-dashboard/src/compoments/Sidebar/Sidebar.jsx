@@ -5,7 +5,7 @@ import CardGrafico from "../CardGrafico/CardGrafico"
 
 export default function Sidebar () {
   return (
-    <Nav defaultActiveKey="/home" className="flex-column mt-3">
+    <Nav defaultActiveKey="/home" className="flex-column">
       <Nav.Item>
         <CardGestor />
       </Nav.Item>
