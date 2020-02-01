@@ -1,17 +1,13 @@
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button
-} from "react-bootstrap";
+import { Navbar, Nav, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperclip, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar.Brand href="#home">Rebook</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -21,6 +17,15 @@ export default function NavBar() {
             <Nav.Link href="#configuracao">Configuração</Nav.Link>
           </Nav>
           
+          <Button variant="outline-info" className="mr-3">
+            <FontAwesomeIcon icon={faPaperclip} size="lg" color="white"></FontAwesomeIcon>
+          </Button>{' '}
+          <Button variant="outline-info">
+            <FontAwesomeIcon icon={faCalendarAlt} size="lg" color="white"></FontAwesomeIcon>
+          </Button>{' '}
+
+          
+         
         </Navbar.Collapse>
       </Navbar>
     </>
