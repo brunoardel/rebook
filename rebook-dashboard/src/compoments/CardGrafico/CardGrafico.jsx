@@ -6,7 +6,7 @@ export default function CardGrafico () {
     return (
         <Card className="text-center">
             <Card.Body>
-                <Image src={Grafico} width="350px" />
+                <Image src={Grafico} height="105" width="auto" />
                 <Card.Title className="mt-2">Taxa de Conversão</Card.Title>
             </Card.Body>
         </Card>

@@ -5,12 +5,12 @@ import NavAbas from '../NavAbas/NavAbas'
 
 export default function Body () {
     return (
-        <div className="mt-3">
-            <Row>
-                <Col md={4} className="">
+        <div className="mt-3 justify-content-between">
+            <Row className="mx-2">
+                <Col md="auto">
                     <Sidebar />
                 </Col>
-                <Col md={8}>
+                <Col md={9}>
                     <NavAbas />
                 </Col>
             </Row>
