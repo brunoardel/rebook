@@ -8,9 +8,7 @@ export default function NavBar() {
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand href="#home">
-          <a href="#home">
-            <img src='https://www.reebokstudio.com.br/images/logo-footer.png' alt="Logo" width="130px" responsive/>
-          </a>
+            <img src='https://www.reebokstudio.com.br/images/logo-footer.png' alt="Logo" width="130px" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,9 +25,6 @@ export default function NavBar() {
           <Button variant="outline-info">
             <FontAwesomeIcon icon={faCalendarAlt} size="lg" color="white"></FontAwesomeIcon>
           </Button>{' '}
-
-          
-         
         </Navbar.Collapse>
       </Navbar>
     </>
