@@ -1,11 +1,12 @@
 import React from "react";
 import { Tabs, Tab } from "react-bootstrap";
+import CardsAbas from '../CardsAbas/CardsAbas'
 
 class NavAbas extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            key: 'painelGerencial',
+            key: 'painelIndicadores',
         };
     }
 
@@ -27,7 +28,7 @@ class NavAbas extends React.Component {
                     Análise Esforço
 				</Tab>
                 <Tab eventKey="painelIndicadores" title="Painel Indicadores">
-                    Painel Indicadores
+                    <CardsAbas />
 				</Tab>
             </Tabs>
         );
