@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
+import { Nav, Card } from "react-bootstrap";
 import CardGestor from "../CardGestor/CardGestor";
 import CardGrafico from "../CardGrafico/CardGrafico"
 
@@ -10,14 +10,16 @@ export default function Sidebar () {
                 <CardGestor />
             </Nav.Item>
             <div className="card">
-                <h5 className="text-center mt-1">Meta Faturamento</h5>
                 <Nav.Item>
+                    <Card.Title className="text-center mt-4 mb-0">Meta Faturamento</Card.Title>
                     <CardGrafico />
                 </Nav.Item>
                 <Nav.Item>
+                    <Card.Title className="text-center mt-4 mb-0">Taxa de Conversão</Card.Title>
                     <CardGrafico />
                 </Nav.Item>
                 <Nav.Item>
+                    <Card.Title className="text-center mt-4 mb-0">Taxa de Conversão</Card.Title>
                     <CardGrafico />
                 </Nav.Item>
 
