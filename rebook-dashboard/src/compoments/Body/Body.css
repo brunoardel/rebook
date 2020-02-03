@@ -1,0 +1,28 @@
+/* body {
+  font: 100% sans-serif;
+}
+h1 {
+  font-size: calc(2em + 1vw);
+}
+h2 {
+  font-size: calc(1.5em + 1vw);
+}
+h3 {
+  font-size: calc(1.17em + 1vw);
+}
+p {
+  font-size: calc(1em + 1vw);
+}
+.card-title, nav a {
+  font-size: calc(0.2em + 1vw);
+} */
+
+@media only screen and (max-width: 1280px) {
+  body .card-title, h5 {
+      font-size: 13px;
+  }
+  body h1 {
+      font-size: 30px;
+  }
+  
+}
